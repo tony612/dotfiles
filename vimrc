@@ -24,12 +24,12 @@ Bundle 'othree/html5.vim'
 Bundle 'adimit/prolog.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'guns/vim-clojure-static'
+" Bundle 'vim-scripts/VimClojure'
 Bundle 'jeyb/vim-jst'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'hallison/vim-ruby-sinatra'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'pangloss/vim-javascript'
-Bundle 'vim-scripts/VimClojure'
 
 " Tools
 Bundle 'rking/ag.vim'
