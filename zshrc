@@ -35,7 +35,7 @@ alias gvim=mvim
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast gem rails3 rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm)
+plugins=(git gitfast gem rails3 rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm bd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -44,7 +44,7 @@ source $ZSH/oh-my-zsh.sh
 alias rake='noglob rake'
 alias bower='noglob bower'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # npm
 export PATH="/usr/local/share/npm/bin:$PATH"
@@ -63,10 +63,10 @@ set output-meta on
 set convert-meta off
 
 # golang
-export PATH=$PATH:/usr/local/Cellar/go/1.0.3/bin
+# export PATH=$PATH:/usr/local/Cellar/go/1.0.3/bin
 
 # SML NJ
-export PATH="$PATH:/usr/local/smlnj-110.75/bin"
+# export PATH="$PATH:/usr/local/smlnj-110.75/bin"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
