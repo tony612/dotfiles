@@ -13,6 +13,7 @@ ZSH_THEME="crunch"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gvim=mvim
+alias emacs=ec
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
