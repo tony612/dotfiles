@@ -30,6 +30,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'hallison/vim-ruby-sinatra'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'pangloss/vim-javascript'
+Bundle 'sunaku/vim-ruby-minitest'
 
 " Tools
 Bundle 'rking/ag.vim'
