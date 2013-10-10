@@ -40,7 +40,7 @@ Bundle 'tpope/vim-dispatch'
 " Editing assist
 Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-endwise'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
 
