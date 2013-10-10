@@ -31,6 +31,7 @@ Bundle 'hallison/vim-ruby-sinatra'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'pangloss/vim-javascript'
 Bundle 'sunaku/vim-ruby-minitest'
+Bundle 'Shutnik/jshint2.vim'
 
 " Tools
 Bundle 'rking/ag.vim'
@@ -172,21 +173,10 @@ set laststatus=2
 " highlight StatusLine term=bold,reverse cterm=bold,reverse
 " call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
-" syntastic
-"let g:syntastic_check_on_open=1
-"let g:syntastic_echo_current_error=1
-"let g:syntastic_error_symbol = '✗'
-"let g:syntastic_warning_symbol = '⚠'
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_loc_list_height = 5
-"let g:syntastic_enable_highlighting = 0
-"" js
-"let g:syntastic_enable_signs=1
-""set statusline+=%#warningmsg#
-""set statusline+=%{SyntasticStatuslineFlag()}
-""set statusline+=%*
-"let g:syntastic_mode_map = {'mode': 'active', 'active_filetypes': ['javascript'], 'passive_filetypes': ['ruby']}
-"let g:syntastic_javascript_checker = 'jshint'
+"" jshint
+let jshint2_read = 1
+let jshint2_save = 1
+let jshint2_confirm = 0
 
 " CtrlP
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
