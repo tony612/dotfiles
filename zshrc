@@ -77,3 +77,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 # export JRUBY_HOME="/Users/tony/.rvm/rubies/jruby-1.6.8"
 
+export PGHOST=localhost
