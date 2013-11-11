@@ -1,7 +1,7 @@
 " Environment {
 
     " Basics {
-        set nocompatible        " Must be first line
+        " set nocompatible        " Must be first line
         set background=dark     " Assume a dark background
     " }
 
@@ -132,12 +132,9 @@
             let g:javascript_conceal = 1
 
             Bundle 'briancollins/vim-jst'
-            Bundle 'kchmck/vim-coffee-script'
+            " Bundle 'kchmck/vim-coffee-script'
 
-            Bundle 'Shutnik/jshint2.vim'
-            let jshint2_read = 1
-            let jshint2_save = 1
-            let jshint2_confirm = 0
+            Bundle 'hallettj/jslint.vim'
         endif
     " }
 

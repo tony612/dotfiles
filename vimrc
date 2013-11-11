@@ -1,3 +1,6 @@
+    " Basics {
+        set nocompatible        " Must be first line
+    " }
 " Use before config {
     if filereadable(expand("~/.vimrc.before"))
         source ~/.vimrc.before
@@ -7,7 +10,7 @@
 " Environment {
 
     " Basics {
-        set nocompatible        " Must be first line
+        " set nocompatible        " Must be first line
     " }
 
     " Setup Bundle Support {
