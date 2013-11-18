@@ -123,21 +123,6 @@
         endif
     " }
 
-    " Javascript {
-        if count(g:spf13_bundle_groups, 'javascript')
-            Bundle 'elzr/vim-json'
-            Bundle 'groenewege/vim-less'
-
-            Bundle 'pangloss/vim-javascript'
-            let g:javascript_conceal = 1
-
-            Bundle 'briancollins/vim-jst'
-            " Bundle 'kchmck/vim-coffee-script'
-
-            Bundle 'hallettj/jslint.vim'
-        endif
-    " }
-
     " Java {
         if count(g:spf13_bundle_groups, 'scala')
             Bundle 'derekwyatt/vim-scala'
@@ -193,6 +178,25 @@
 
             Bundle 'tpope/vim-bundler'
             Bundle 'tpope/vim-rails'
+        endif
+    " }
+
+    " Javascript {
+        if count(g:spf13_bundle_groups, 'javascript')
+            Bundle 'elzr/vim-json'
+            Bundle 'groenewege/vim-less'
+
+            Bundle 'pangloss/vim-javascript'
+            let g:javascript_conceal = 1
+
+            Bundle 'briancollins/vim-jst'
+            " Bundle 'kchmck/vim-coffee-script'
+
+            Bundle 'Shutnik/jshint2.vim'
+            let jshint2_read = 1
+            let jshint2_save = 1
+            let jshint2_confirm = 0
+            " Bundle 'hallettj/jslint.vim'
         endif
     " }
 
