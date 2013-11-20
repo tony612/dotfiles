@@ -36,7 +36,7 @@ alias gvim=mvim
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast gem rails3 rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm bd)
+plugins=(git gitfast gem rails3 rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm bd autojump)
 
 source $ZSH/oh-my-zsh.sh
 
