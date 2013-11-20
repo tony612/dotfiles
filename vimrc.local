@@ -1,1 +1,6 @@
 let g:JSLintHighlightErrorLine = 0
+
+" Enable spellchecking for Markdown
+autocmd BufRead,BufNewFile *.md setlocal spell
+" Enable spellchecking for gitcommit
+autocmd FileType gitcommit setlocal spell
