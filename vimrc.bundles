@@ -242,6 +242,7 @@
             " Bundle 'tpope/vim-cucumber'
             " Bundle 'quentindecock/vim-cucumber-align-pipes'
             " Bundle 'Puppet-Syntax-Highlighting'
+            Bundle 'Floobits/floobits-vim'
         endif
     " }
 
