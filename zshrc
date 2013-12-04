@@ -15,6 +15,7 @@ ZSH_THEME="crunch"
 alias gvim=mvim
 # alias emacs=ec
 
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs "$@" &'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
