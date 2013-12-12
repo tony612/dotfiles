@@ -109,9 +109,11 @@
 
 " Vim UI {
 
+    set background=dark
     color codeschool
+    " colorscheme solarized
 
-    set gfn=Monaco:h14
+    set gfn=Monaco:h15
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
 
