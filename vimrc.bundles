@@ -209,7 +209,7 @@
             let g:javascript_conceal = 1
 
             Bundle 'briancollins/vim-jst'
-            " Bundle 'kchmck/vim-coffee-script'
+            Bundle 'kchmck/vim-coffee-script'
 
             Bundle 'Shutnik/jshint2.vim'
             let jshint2_read = 1
