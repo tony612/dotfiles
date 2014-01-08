@@ -21,6 +21,8 @@ alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs "$@" &'
 
 alias rts='ruby -I test'
 
+alias git-delete-branches-merged-into-current='git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d'
+
 # Comment this out to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
 
