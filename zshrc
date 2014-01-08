@@ -19,6 +19,8 @@ alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs "$@" &'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
+alias rts='ruby -I test'
+
 # Comment this out to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
 
