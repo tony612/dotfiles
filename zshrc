@@ -20,6 +20,7 @@ alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs "$@" &'
 # CASE_SENSITIVE="true"
 
 alias rts='ruby -I test'
+alias rmt='ruby -rminitest/pride'
 
 alias git-delete-branches-merged-into-current='git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d'
 
