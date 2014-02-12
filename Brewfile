@@ -40,6 +40,9 @@ install tig
 install tree
 install wget
 install zsh
+tap thoughtbot/formulae
+install gitsh
+install hub
 
 # For macvim
 linkapps
