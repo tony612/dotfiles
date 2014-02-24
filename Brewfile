@@ -43,6 +43,7 @@ install zsh
 tap thoughtbot/formulae
 install gitsh
 install hub
+install jq
 
 # For macvim
 linkapps
