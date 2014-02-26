@@ -39,6 +39,7 @@ source $ZSH/oh-my-zsh.sh
 alias gvim=mvim
 # alias emacs=ec
 alias git=hub
+alias gm='git merge --no-ff'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
