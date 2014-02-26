@@ -9,21 +9,6 @@ ZSH=$HOME/.oh-my-zsh
 # sunrise
 ZSH_THEME="crunch"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gvim=mvim
-# alias emacs=ec
-alias git=hub
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-alias rts='ruby -I test'
-alias rmt='ruby -rminitest/pride'
-
-alias git-delete-branches-merged-into-current='git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d'
-
 # Comment this out to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
 
@@ -48,6 +33,20 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gvim=mvim
+# alias emacs=ec
+alias git=hub
+
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
+
+alias rts='ruby -I test'
+alias rmt='ruby -rminitest/pride'
+
+alias git-delete-branches-merged-into-current='git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d'
 alias rake='noglob rake'
 alias bower='noglob bower'
 
