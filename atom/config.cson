@@ -8,6 +8,12 @@
   'userId': '067dba6ea4a451705da593bab8ba135955582131'
 'editor':
   'fontSize': 16
+  'invisibles':
+    'tab': '»·'
+    'space': '.'
+    'cr': ''
+    'eol': ''
+  'showInvisibles': true
 'core':
   'themes': [
     'atom-dark-ui'
@@ -18,6 +24,12 @@
     '.svn'
     '.DS_Store'
   ]
+  'disabledPackages': [
+    'archive-view'
+    'autoflow'
+    'package-generator'
+    'welcome'
+  ]
 'spell-check':
   'grammars': [
     'source.gfm'
@@ -27,3 +39,4 @@
 'whitespace':
   'ensureSingleTrailingNewline': true
   'removeTrailingWhitespace': true
+  'ignoreWhitespaceOnCurrentLine': false

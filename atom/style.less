@@ -19,3 +19,17 @@
 .editor .cursor {
 
 }
+
+.leading-whitespace.invisible-character {
+  visibility: hidden;
+}
+
+.editor .invisible-character {
+  color: #525861;
+}
+
+.editor.is-focused.vim-mode.command-mode:not(.mini) {
+  .cursor.blink-off {
+    visibility: hidden;
+  }
+}
