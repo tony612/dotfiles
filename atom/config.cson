@@ -1,0 +1,29 @@
+'exception-reporting':
+  'userId': '785a12dd-038b-6d03-f5f8-23d58038b90d'
+'release-notes':
+  'viewedVersion': '0.67.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '067dba6ea4a451705da593bab8ba135955582131'
+'editor':
+  'fontSize': 16
+'core':
+  'themes': [
+    'atom-dark-ui'
+    'base16-tomorrow-dark-theme'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+  ]
+'spell-check':
+  'grammars': [
+    'source.gfm'
+    'text.git-commit'
+    'text.plain'
+  ]
+'whitespace':
+  'ensureSingleTrailingNewline': true
+  'removeTrailingWhitespace': true
