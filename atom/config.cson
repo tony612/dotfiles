@@ -40,3 +40,6 @@
   'ensureSingleTrailingNewline': true
   'removeTrailingWhitespace': true
   'ignoreWhitespaceOnCurrentLine': false
+'tree-view':
+  'hideIgnoredNames': true
+  'hideVcsIgnoredFiles': true
