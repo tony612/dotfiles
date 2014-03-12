@@ -6,7 +6,8 @@ task :install do
   install_oh_my_zsh
   switch_to_zsh
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh]
+  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh atom]
+  files += Dir['atom/*']
   files << "oh-my-zsh/custom/crunch.zsh-theme"
   files << "oh-my-zsh/custom/plugins/bd.plugin.zsh"
   files << "oh-my-zsh/custom/vpn.zsh"
