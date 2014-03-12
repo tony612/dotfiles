@@ -7,4 +7,4 @@
   'ctrl-w ctrl-j': 'vim-mode:focus-pane-view-on-below'
   'ctrl-w ctrl-k': 'vim-mode:focus-pane-view-on-above'
   'ctrl-w ctrl-l': 'vim-mode:focus-pane-view-on-right'
-
+  '%': 'bracket-matcher:go-to-matching-bracket'

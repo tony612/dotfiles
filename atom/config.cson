@@ -1,19 +1,20 @@
 'exception-reporting':
   'userId': '785a12dd-038b-6d03-f5f8-23d58038b90d'
 'release-notes':
-  'viewedVersion': '0.69.0'
+  'viewedVersion': '0.71.0'
 'welcome':
   'showOnStartup': false
 'metrics':
   'userId': '067dba6ea4a451705da593bab8ba135955582131'
 'editor':
-  'fontSize': 16
   'invisibles':
     'tab': '»·'
     'space': '.'
     'cr': ''
     'eol': ''
   'showInvisibles': true
+  'softWrapAtPreferredLineLength': true
+  'softWrap': true
 'core':
   'themes': [
     'atom-dark-ui'
@@ -29,6 +30,11 @@
     'autoflow'
     'package-generator'
     'welcome'
+    'highlight-line'
+    'background-tips'
+    'autosave'
+    'ruby-bundler'
+    'feedback'
   ]
 'spell-check':
   'grammars': [
@@ -43,3 +49,19 @@
 'tree-view':
   'hideIgnoredNames': true
   'hideVcsIgnoredFiles': true
+'highlight-line': {}
+'markdown-preview':
+  'grammars': [
+    'source.gfm'
+    'source.litcoffee'
+    'text.plain'
+    'text.plain.null-grammar'
+  ]
+'autosave': {}
+'rails-rspec':
+  'specSearchPaths': [
+    'spec'
+    'fast_spec'
+  ]
+'autocomplete':
+  'includeCompletionsFromAllBuffers': true
