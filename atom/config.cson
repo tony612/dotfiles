@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '785a12dd-038b-6d03-f5f8-23d58038b90d'
 'release-notes':
-  'viewedVersion': '0.71.0'
+  'viewedVersion': '0.76.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -13,8 +13,6 @@
     'cr': ''
     'eol': ''
   'showInvisibles': true
-  'softWrapAtPreferredLineLength': true
-  'softWrap': true
 'core':
   'themes': [
     'atom-dark-ui'
@@ -30,12 +28,14 @@
     'autoflow'
     'package-generator'
     'welcome'
-    'highlight-line'
     'background-tips'
     'autosave'
     'ruby-bundler'
     'feedback'
+    'highlight-line'
+    'emmet'
   ]
+  'excludeVcsIgnoredPaths': false
 'spell-check':
   'grammars': [
     'source.gfm'
@@ -48,7 +48,6 @@
   'ignoreWhitespaceOnCurrentLine': false
 'tree-view':
   'hideIgnoredNames': true
-  'hideVcsIgnoredFiles': true
 'highlight-line': {}
 'markdown-preview':
   'grammars': [
@@ -65,3 +64,5 @@
   ]
 'autocomplete':
   'includeCompletionsFromAllBuffers': true
+'highlight-column':
+  'opacity': 0.15
