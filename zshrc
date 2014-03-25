@@ -54,7 +54,7 @@ alias bower='noglob bower'
 PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # npm
-export PATH="/usr/local/share/npm/bin:$PATH"
+PATH=/usr/local/share/npm/bin:$PATH
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
@@ -76,7 +76,7 @@ set convert-meta off
 # export PATH="$PATH:/usr/local/smlnj-110.75/bin"
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+PATH=/usr/local/heroku/bin:$PATH
 
 # export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home"
 # export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands"
@@ -84,3 +84,6 @@ export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 # export JRUBY_HOME="/Users/tony/.rvm/rubies/jruby-1.6.8"
 
 export PGHOST=localhost
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
