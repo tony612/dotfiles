@@ -27,7 +27,7 @@ ZSH_THEME="crunch"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast gem rails rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm bd autojump)
+plugins=(git gitfast gem rails rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm bd autojump node npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,3 +87,7 @@ export PGHOST=localhost
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+# node
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
+
+nvm use default
