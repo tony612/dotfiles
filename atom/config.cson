@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '785a12dd-038b-6d03-f5f8-23d58038b90d'
 'release-notes':
-  'viewedVersion': '0.76.0'
+  'viewedVersion': '0.94.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -18,11 +18,6 @@
     'atom-dark-ui'
     'base16-tomorrow-dark-theme'
   ]
-  'ignoredNames': [
-    '.git'
-    '.svn'
-    '.DS_Store'
-  ]
   'disabledPackages': [
     'archive-view'
     'autoflow'
@@ -30,10 +25,11 @@
     'welcome'
     'background-tips'
     'autosave'
-    'ruby-bundler'
     'feedback'
+    'atom-lint'
+    'jslint'
+    'coffee-lint'
     'highlight-line'
-    'emmet'
   ]
   'excludeVcsIgnoredPaths': false
 'spell-check':
@@ -48,7 +44,8 @@
   'ignoreWhitespaceOnCurrentLine': false
 'tree-view':
   'hideIgnoredNames': true
-'highlight-line': {}
+'highlight-line':
+  'enableBackgroundColor': false
 'markdown-preview':
   'grammars': [
     'source.gfm'
@@ -65,4 +62,7 @@
 'autocomplete':
   'includeCompletionsFromAllBuffers': true
 'highlight-column':
-  'opacity': 0.15
+  'opacity': 0.1
+  'enableHighlight': true
+'jslint':
+  'hideOnNoErrors': true
