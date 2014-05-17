@@ -64,6 +64,9 @@
     " set spell                           " Spell checking on
     set hidden                          " Allow buffer switching without saving
 
+    " http://superuser.com/questions/302186/vim-scrolls-very-slow-when-a-line-is-to-long
+    set synmaxcol=128
+
     " Instead of reverting the cursor to the last position in the buffer, we
     " set it to the first line when editing a git commit message
     au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
