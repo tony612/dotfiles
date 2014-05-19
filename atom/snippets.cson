@@ -22,3 +22,6 @@
   'Binding.pry':
     'prefix': 'bp'
     'body': 'binding.pry'
+  'Bye bug':
+    'prefix': 'bb'
+    'body': 'byebug'
