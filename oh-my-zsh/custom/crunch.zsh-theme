@@ -41,6 +41,9 @@ else
   fi
 fi
 
+# Hot fix
+CRUNCH_RVM_="$CRUNCH_BRACKET_COLOR"["$CRUNCH_RVM_COLOR\${\$(~/.rvm/bin/rvm-prompt i v g)#ruby-}$CRUNCH_BRACKET_COLOR"]"%{$reset_color%}"
+
 CRUNCH_DIR_="$CRUNCH_TIME_COLOR%p $CRUNCH_DIR_COLOR%c\$(git_prompt_info) "
 # CRUNCH_DIR_="$CRUNCH_DIR_COLOR%p "
 CRUNCH_PROMPT="$CRUNCH_BRACKET_COLOR➭ "

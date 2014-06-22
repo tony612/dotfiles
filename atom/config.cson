@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '785a12dd-038b-6d03-f5f8-23d58038b90d'
 'release-notes':
-  'viewedVersion': '0.95.0'
+  'viewedVersion': '0.106.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -47,12 +47,7 @@
 'highlight-line':
   'enableBackgroundColor': false
 'markdown-preview':
-  'grammars': [
-    'source.gfm'
-    'source.litcoffee'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
+  'breakOnSingleNewline': true
 'autosave': {}
 'rails-rspec':
   'specSearchPaths': [
@@ -62,7 +57,7 @@
 'autocomplete':
   'includeCompletionsFromAllBuffers': true
 'highlight-column':
-  'opacity': 0.1
+  'opacity': 0.15
   'enableHighlight': true
 'jslint':
   'hideOnNoErrors': true

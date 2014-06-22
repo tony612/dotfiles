@@ -10,11 +10,13 @@
 
 @import "syntax-variables";
 
+@syntax-background-color: #252c31;
+
 .tree-view {
 }
 
 .editor {
-  background-color: #252c31;
+  background-color: @syntax-background-color;
 }
 
 .editor .cursor {
@@ -46,15 +48,4 @@
 
 .cursor-line {
   // background-color: black;
-}
-
-.git-commit.line-too-long.deprecated {
-  color: orange;
-  text-decoration: none;
-}
-
-.editor .git-commit.line-too-long.illegal {
-  color: #fff;
-  background: #DA2C43;
-  opacity: 0.9;
 }
