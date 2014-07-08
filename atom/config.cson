@@ -32,6 +32,7 @@
     'highlight-line'
   ]
   'excludeVcsIgnoredPaths': false
+  'useReactEditor': true
 'spell-check':
   'grammars': [
     'source.gfm'

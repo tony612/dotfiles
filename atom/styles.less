@@ -15,12 +15,10 @@
 .tree-view {
 }
 
-.editor {
-  background-color: @syntax-background-color;
-}
-
-.editor .cursor {
-
+.scroll-view {
+  &, & .lines {
+    background-color: @syntax-background-color;
+  }
 }
 
 .leading-whitespace.invisible-character {
@@ -31,10 +29,8 @@
   color: #525861;
 }
 
-.editor.is-focused.vim-mode.command-mode:not(.mini) {
-  .cursor.blink-off {
-    visibility: hidden;
-  }
+.editor.react .cursors.blink-off .cursor {
+  visibility: hidden;
 }
 
 .editor .wrap-guide {
