@@ -12,6 +12,7 @@ task :install do
   files << "oh-my-zsh/custom/plugins/bd.plugin.zsh"
   files << "oh-my-zsh/custom/vpn.zsh"
   files << "oh-my-zsh/custom/cd_git_root.zsh"
+  files << "oh-my-zsh/custom/tn.zsh"
   files.each do |file|
     system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}"))
