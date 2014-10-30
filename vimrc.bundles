@@ -242,7 +242,7 @@
             " Plugin 'tpope/vim-cucumber'
             " Plugin 'quentindecock/vim-cucumber-align-pipes'
             " Plugin 'Puppet-Syntax-Highlighting'
-            Plugin 'Floobits/floobits-vim'
+            " Plugin 'Floobits/floobits-vim'
         endif
     " }
 
