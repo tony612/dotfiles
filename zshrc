@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gvim=mvim
 # alias emacs=ec
-alias git=hub
+# alias git=hub
 alias gm='git merge --no-ff'
 
 # Set to this to use case-sensitive completion
@@ -91,3 +91,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
 
 nvm use default
+
+export PATH="$PATH:/Users/tony/repo/php/phabricator/arcanist/bin/"
