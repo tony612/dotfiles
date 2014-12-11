@@ -1,0 +1,19 @@
+{
+  "hosts"   : {
+    "https:\/\/p.llsapp.com\/api\/" : {
+      "user" : "tonyhan",
+      "cert" : "hweeehblqkh5jrppf6ifx5jri6ffmgdu3ljg5x6b44m6kfw4vzm6mspwqnqzcqu3mdopajtlgmtsyj444gotlo2bvgqsypvymqvu64j5kjjn4rqsmgrg4zy5j6qrholbrjru26txtcsjqcl4fuwaeoksfawwniwsjh43qcrahfjhyrxuv2rwwo5zvqbugtmru4jovne7y6rk3pvs5ge2a3um6nkj5gihv7cvqktqsqpb4tpcihbjcdnbvixtzsi"
+    }
+  },
+  "config"  : {
+    "arc.land.onto.default" : "develop",
+    "base"                  : "git:merge-base(origin\/develop), arc:prompt",
+    "onto"                  : "develop"
+  },
+  "aliases" : {
+    "hand" : [
+      "land",
+      "--hold"
+    ]
+  }
+}
