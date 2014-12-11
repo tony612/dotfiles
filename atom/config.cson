@@ -1,64 +1,60 @@
-'exception-reporting':
-  'userId': '785a12dd-038b-6d03-f5f8-23d58038b90d'
-'release-notes':
-  'viewedVersion': '0.106.0'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': '067dba6ea4a451705da593bab8ba135955582131'
-'editor':
-  'invisibles':
-    'tab': '»·'
-    'space': '.'
-    'cr': ''
-    'eol': ''
-  'showInvisibles': true
-'core':
-  'themes': [
-    'atom-dark-ui'
-    'base16-tomorrow-dark-theme'
-  ]
-  'disabledPackages': [
-    'archive-view'
-    'autoflow'
-    'package-generator'
-    'welcome'
-    'background-tips'
-    'autosave'
-    'feedback'
-    'atom-lint'
-    'jslint'
-    'coffee-lint'
-    'highlight-line'
-  ]
-  'excludeVcsIgnoredPaths': false
-  'useReactEditor': true
-'spell-check':
-  'grammars': [
-    'source.gfm'
-    'text.git-commit'
-    'text.plain'
-  ]
-'whitespace':
-  'ensureSingleTrailingNewline': true
-  'removeTrailingWhitespace': true
-  'ignoreWhitespaceOnCurrentLine': false
-'tree-view':
-  'hideIgnoredNames': true
-'highlight-line':
-  'enableBackgroundColor': false
-'markdown-preview':
-  'breakOnSingleNewline': true
-'autosave': {}
-'rails-rspec':
-  'specSearchPaths': [
-    'spec'
-    'fast_spec'
-  ]
-'autocomplete':
-  'includeCompletionsFromAllBuffers': true
-'highlight-column':
-  'opacity': 0.15
-  'enableHighlight': true
-'jslint':
-  'hideOnNoErrors': true
+'global':
+  'exception-reporting':
+    'userId': '785a12dd-038b-6d03-f5f8-23d58038b90d'
+  'release-notes':
+    'viewedVersion': '0.106.0'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '067dba6ea4a451705da593bab8ba135955582131'
+  'editor':
+    'invisibles':
+      'tab': '»·'
+      'space': '.'
+  'core':
+    'themes': [
+      'unity-ui'
+      'solarized-light-syntax'
+    ]
+    'disabledPackages': [
+      'archive-view'
+      'autoflow'
+      'package-generator'
+      'welcome'
+      'background-tips'
+      'autosave'
+      'feedback'
+      'atom-lint'
+      'jslint'
+      'coffee-lint'
+      'highlight-line'
+    ]
+    'excludeVcsIgnoredPaths': false
+    'useReactEditor': true
+  'spell-check':
+    'grammars': [
+      'source.gfm'
+      'text.git-commit'
+      'text.plain'
+    ]
+  'whitespace':
+    'ignoreWhitespaceOnCurrentLine': false
+  'tree-view':
+    'hideIgnoredNames': true
+    'hideVcsIgnoredFiles': true
+  'highlight-line':
+    'enableBackgroundColor': false
+  'markdown-preview':
+    'breakOnSingleNewline': true
+  'rails-rspec':
+    'specSearchPaths': [
+      'spec'
+      'fast_spec'
+    ]
+  'autocomplete':
+    'includeCompletionsFromAllBuffers': true
+  'highlight-column':
+    'opacity': 0.15
+    'enableHighlight': true
+  'jslint':
+    'hideOnNoErrors': true
