@@ -58,3 +58,6 @@
     'enableHighlight': true
   'jslint':
     'hideOnNoErrors': true
+  'jshint':
+    'supportLintingJsx': true
+    'validateOnlyOnSave': true
