@@ -61,3 +61,4 @@
   'jshint':
     'supportLintingJsx': true
     'validateOnlyOnSave': true
+  'autoclose-html': {}
