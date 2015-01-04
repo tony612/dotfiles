@@ -62,3 +62,5 @@
     'supportLintingJsx': true
     'validateOnlyOnSave': true
   'autoclose-html': {}
+  'autocomplete-plus':
+    'navigateCompletions': 'ctrl-p,ctrl-n'
