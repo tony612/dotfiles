@@ -27,6 +27,12 @@ ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_CLEAN=" $CRUNCH_GIT_CLEAN_COLOR✓"
 ZSH_THEME_GIT_PROMPT_DIRTY=" $CRUNCH_GIT_DIRTY_COLOR✗"
 
+ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[cyan]%}▴%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[magenta]%}▾%{$reset_color%} "
+# ZSH_THEME_GIT_PROMPT_STAGED="%{$fg_bold[green]%}●%{$reset_color%} "
+# ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg_bold[yellow]%}●%{$reset_color%} "
+# ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[red]%}●%{$reset_color%} "
+
 # Our elements:
 CRUNCH_TIME_="$CRUNCH_BRACKET_COLOR{$CRUNCH_TIME_COLOR%T$CRUNCH_BRACKET_COLOR}%{$reset_color%}"
 
@@ -44,9 +50,9 @@ fi
 # Hot fix
 CRUNCH_RVM_="$CRUNCH_BRACKET_COLOR"["$CRUNCH_RVM_COLOR\${\$(~/.rvm/bin/rvm-prompt i v g)#ruby-}$CRUNCH_BRACKET_COLOR"]"%{$reset_color%}"
 
-CRUNCH_DIR_="$CRUNCH_TIME_COLOR%p $CRUNCH_DIR_COLOR%c\$(git_prompt_info) "
+CRUNCH_DIR_="$CRUNCH_TIME_COLOR%p $CRUNCH_DIR_COLOR%c\$(git_prompt_info) \$(git_prompt_status)"
 # CRUNCH_DIR_="$CRUNCH_DIR_COLOR%p "
-CRUNCH_PROMPT="$CRUNCH_BRACKET_COLOR➭ "
+CRUNCH_PROMPT="$CRUNCH_BRACKET_COLOR"
 
 # Put it all together!
-PROMPT="$CURRENT_USER_$CRUNCH_RVM_$CRUNCH_DIR_$CRUNCH_PROMPT%{$reset_color%}"
+PROMPT="$CRUNCH_RVM_$CRUNCH_DIR_$CRUNCH_GIT_STATUS$CRUNCH_PROMPT%{$reset_color%}"
