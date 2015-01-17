@@ -1,66 +1,68 @@
-'global':
-  'exception-reporting':
-    'userId': '785a12dd-038b-6d03-f5f8-23d58038b90d'
-  'release-notes':
-    'viewedVersion': '0.106.0'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '067dba6ea4a451705da593bab8ba135955582131'
-  'editor':
-    'invisibles':
-      'tab': '»·'
-      'space': '.'
-  'core':
-    'themes': [
-      'unity-ui'
-      'solarized-light-syntax'
+"*":
+  "exception-reporting":
+    userId: "785a12dd-038b-6d03-f5f8-23d58038b90d"
+  "release-notes":
+    viewedVersion: "0.106.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "067dba6ea4a451705da593bab8ba135955582131"
+  editor:
+    invisibles:
+      space: "."
+      tab: "»·"
+  core:
+    excludeVcsIgnoredPaths: false
+    disabledPackages: [
+      "archive-view"
+      "autoflow"
+      "package-generator"
+      "welcome"
+      "autosave"
+      "feedback"
+      "atom-lint"
+      "jslint"
+      "coffee-lint"
+      "highlight-line"
     ]
-    'disabledPackages': [
-      'archive-view'
-      'autoflow'
-      'package-generator'
-      'welcome'
-      'background-tips'
-      'autosave'
-      'feedback'
-      'atom-lint'
-      'jslint'
-      'coffee-lint'
-      'highlight-line'
+    themes: [
+      "atom-light-ui"
+      "solarized-light-syntax"
     ]
-    'excludeVcsIgnoredPaths': false
-    'useReactEditor': true
-  'spell-check':
-    'grammars': [
-      'source.gfm'
-      'text.git-commit'
-      'text.plain'
+  "spell-check":
+    grammars: [
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
     ]
-  'whitespace':
-    'ignoreWhitespaceOnCurrentLine': false
-  'tree-view':
-    'hideIgnoredNames': true
-    'hideVcsIgnoredFiles': true
-  'highlight-line':
-    'enableBackgroundColor': false
-  'markdown-preview':
-    'breakOnSingleNewline': true
-  'rails-rspec':
-    'specSearchPaths': [
-      'spec'
-      'fast_spec'
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "tree-view":
+    hideVcsIgnoredFiles: true
+    hideIgnoredNames: true
+  "highlight-line":
+    enableBackgroundColor: false
+  "markdown-preview":
+    breakOnSingleNewline: true
+  "rails-rspec":
+    specSearchPaths: [
+      "spec"
+      "fast_spec"
     ]
-  'autocomplete':
-    'includeCompletionsFromAllBuffers': true
-  'highlight-column':
-    'opacity': 0.15
-    'enableHighlight': true
-  'jslint':
-    'hideOnNoErrors': true
-  'jshint':
-    'supportLintingJsx': true
-    'validateOnlyOnSave': true
-  'autoclose-html': {}
-  'autocomplete-plus':
-    'navigateCompletions': 'ctrl-p,ctrl-n'
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "highlight-column":
+    opacity: 0.15
+    enableHighlight: true
+  jslint:
+    hideOnNoErrors: true
+  jshint:
+    validateOnlyOnSave: true
+    supportLintingJsx: true
+  "autocomplete-plus":
+    navigateCompletions: "ctrl-p,ctrl-n"
+  "autoclose-html": {}
+  react:
+    jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
+    jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
+    decreaseIndentForNextLinePattern: "/>\\s*,?\\s*$"
