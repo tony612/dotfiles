@@ -12,7 +12,6 @@
       space: "."
       tab: "»·"
   core:
-    excludeVcsIgnoredPaths: false
     disabledPackages: [
       "archive-view"
       "autoflow"
@@ -51,9 +50,6 @@
     ]
   autocomplete:
     includeCompletionsFromAllBuffers: true
-  "highlight-column":
-    opacity: 0.15
-    enableHighlight: true
   jslint:
     hideOnNoErrors: true
   jshint:
@@ -66,3 +62,4 @@
     jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
     jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
     decreaseIndentForNextLinePattern: "/>\\s*,?\\s*$"
+  "highlight-column": {}
