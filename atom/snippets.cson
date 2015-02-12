@@ -17,6 +17,27 @@
   'Console log':
     'prefix': 'cl'
     'body': 'console.log($1)$2'
+  'Class':
+    'prefix': 'cla'
+    'body': 'function ${1:Klass}() {\n\t$2\n}'
+  'Class with super':
+    'prefix': 'clasuper'
+    'body': 'function ${1:Klass}() {\n\t${2:Parent}.call(this);\n\n\t$3\n}'
+  'Call super':
+    'prefix': 'supermethod'
+    'body': '${1:Parent}.prototype.apply(this, arguments);'
+  'Inherit':
+    'prefix': 'inherit'
+    'body': '${1:Klass}.prototype = Object.create(${2:Parent}.prototype);\n${1:Klass}.prototype.constructor = ${1:Klass};'
+  'Prototype':
+    'prefix': 'proto'
+    'body': '${1:Klass}.prototype.${2:method_name} = function(${3:first_argument}) {\n\t${0:}\n};'
+  'Inherit Prototype':
+    'prefix': 'protosuper'
+    'body': '${1:Klass}.prototype.${2:method_name} = function(${3:first_argument}) {\n\t${4:Parent}.prototype.${2:method_name}.apply(this, arguments);\n};'
+  'forEach':
+    'prefix': 'feach'
+    'body': 'forEach(function(${1:item}) {\n\t$2\n})'
 
 '.source.ruby':
   'Binding.pry':
@@ -25,3 +46,13 @@
   'Bye bug':
     'prefix': 'bb'
     'body': 'byebug'
+
+'.source.ruby.rails':
+  'Concern':
+    'prefix': 'concern'
+    'body': 'module ${1:ModuleName}\n\textend ActiveSupport::Concern\n\n\tincluded do\n\t\t$2\n\tend\n\n\tmodule ClassMethods\n\t\t$3\n\tend\nend'
+
+'.source.erlang':
+  '=:=':
+    'prefix': '=='
+    'body': '=:= '

@@ -11,6 +11,7 @@
     invisibles:
       space: "."
       tab: "»·"
+    fontSize: 15
   core:
     disabledPackages: [
       "archive-view"
@@ -25,7 +26,7 @@
       "highlight-line"
     ]
     themes: [
-      "atom-light-ui"
+      "one-light-ui"
       "solarized-light-syntax"
     ]
   "spell-check":
@@ -61,5 +62,6 @@
   react:
     jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
     jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
-    decreaseIndentForNextLinePattern: "/>\\s*,?\\s*$"
+    decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
   "highlight-column": {}
+  "git-plus": {}
