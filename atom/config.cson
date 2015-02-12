@@ -20,7 +20,6 @@
       "welcome"
       "autosave"
       "feedback"
-      "atom-lint"
       "jslint"
       "coffee-lint"
       "highlight-line"
@@ -65,3 +64,4 @@
     decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
   "highlight-column": {}
   "git-plus": {}
+  "atom-lint": {}
