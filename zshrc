@@ -93,3 +93,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 nvm use default
 
 export PATH="$PATH:/Users/tony/repo/php/phabricator/arcanist/bin/"
+
+source /usr/local/share/zsh/site-functions/_aws
