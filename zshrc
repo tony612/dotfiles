@@ -27,7 +27,7 @@ ZSH_THEME="crunch"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast gem rails rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm bd autojump node npm)
+plugins=(git gitfast gem rails rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm bd autojump node npm mix)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,5 +93,13 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 nvm use default
 
 export PATH="$PATH:/Users/tony/repo/php/phabricator/arcanist/bin/"
+
+arc alias hand -- land --hold
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/tony/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+alias gpl="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 source /usr/local/share/zsh/site-functions/_aws

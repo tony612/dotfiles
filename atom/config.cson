@@ -58,10 +58,7 @@
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
   "autoclose-html": {}
-  react:
-    jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
-    jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
-    decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
+  react: {}
   "highlight-column": {}
   "git-plus": {}
   "atom-lint": {}
