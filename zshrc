@@ -103,3 +103,8 @@ export DOCKER_TLS_VERIFY=1
 alias gpl="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 source /usr/local/share/zsh/site-functions/_aws
+
+export EC2_INI_PATH=/Users/tony/repo/ec2.ini
+
+export ANSIBLE_HOSTS=/Users/tony/repo/ec2.py
+
