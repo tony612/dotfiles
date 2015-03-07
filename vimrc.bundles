@@ -58,7 +58,7 @@
     " In your .vimrc.bundles.local file
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
-        let g:spf13_bundle_groups=['general', 'snipmate', 'programming', 'ruby', 'go', 'javascript', 'html', 'misc', 'scala', 'clojure', 'php']
+        let g:spf13_bundle_groups=['general', 'snipmate', 'programming', 'ruby', 'go', 'javascript', 'html', 'misc', 'scala', 'clojure', 'php', 'elixir']
     endif
 
     " To override all the included bundles, add the following to your
@@ -198,6 +198,12 @@
 
             Plugin 'tpope/vim-bundler'
             Plugin 'tpope/vim-rails'
+        endif
+    " }
+
+    " Elixir {
+        if count(g:spf13_bundle_groups, 'elixir')
+          Plugin 'elixir-lang/vim-elixir'
         endif
     " }
 
