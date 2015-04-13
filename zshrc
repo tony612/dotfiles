@@ -108,3 +108,4 @@ export EC2_INI_PATH=/Users/tony/repo/ec2.ini
 
 export ANSIBLE_HOSTS=/Users/tony/repo/ec2.py
 
+ulimit -n 2048
