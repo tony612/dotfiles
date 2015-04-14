@@ -24,6 +24,7 @@
       "highlight-line"
       "linter"
       "linter-rubocop"
+      "jshint"
     ]
     themes: [
       "one-light-ui"
