@@ -38,7 +38,6 @@
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   "tree-view":
-    hideVcsIgnoredFiles: true
     hideIgnoredNames: true
   "highlight-line":
     enableBackgroundColor: false
