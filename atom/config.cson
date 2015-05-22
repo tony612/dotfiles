@@ -22,9 +22,10 @@
       "jslint"
       "coffee-lint"
       "highlight-line"
-      "linter"
       "linter-rubocop"
       "jshint"
+      "atom-lint"
+      "deprecation-cop"
     ]
     themes: [
       "one-light-ui"
@@ -58,13 +59,20 @@
     supportLintingJsx: true
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
-  "autoclose-html": {}
-  react: {}
-  "highlight-column": {}
-  "git-plus": {}
+  "autoclose-html":
+    {}
+  react:
+    {}
+  "highlight-column":
+    enableHighlight: false
+  "git-plus":
+    {}
   "atom-lint":
     rubocop:
       path: "/Users/tony/.rvm/gems/ruby-2.1.3/bin/rubocop"
-  linter: {}
+    jshint:
+      esnext: true
+  linter:
+    {}
   "linter-rubocop":
     rubocopExecutablePath: "/Users/tony/.rvm/gems/ruby-2.1.3/bin/rubocop"
