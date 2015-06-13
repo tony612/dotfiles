@@ -27,7 +27,7 @@ ZSH_THEME="crunch"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast gem rails rake bundler ruby rvm git-flow git-hubflow brew cap lein web-search zeus npm bd autojump node npm mix)
+plugins=(git gem rails rake bundler ruby rvm git-flow brew cap lein web-search zeus npm bd autojump node npm mix)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -51,12 +51,8 @@ alias git-delete-branches-merged-into-current='git branch --merged | grep -v "\*
 alias rake='noglob rake'
 alias bower='noglob bower'
 
-PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # npm
 PATH=/usr/local/share/npm/bin:$PATH
-
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 export EDITOR="mvim -f"
 
@@ -85,14 +81,12 @@ export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 
 export PGHOST=localhost
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # node
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
 
 nvm use default
 
-export PATH="$PATH:/Users/tony/repo/php/phabricator/arcanist/bin/"
+export PATH="$PATH:/Users/tony/repo/php/phabricator/arcanist/bin"
 
 arc alias hand -- land --hold
 
@@ -104,8 +98,11 @@ alias gpl="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%C
 
 source /usr/local/share/zsh/site-functions/_aws
 
-export EC2_INI_PATH=/Users/tony/repo/ec2.ini
+ulimit -n 10240
 
-export ANSIBLE_HOSTS=/Users/tony/repo/ec2.py
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-ulimit -n 2048
+alias fuck='$(thefuck $(fc -ln -1))'
+
+[[ -d $HOME/.zshrc.secret ]] && source $HOME/.zshrc.secret
+

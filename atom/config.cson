@@ -10,7 +10,6 @@
   editor:
     invisibles:
       space: "."
-      tab: "»·"
   core:
     disabledPackages: [
       "archive-view"
