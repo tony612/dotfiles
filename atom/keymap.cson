@@ -1,4 +1,4 @@
-'.editor':
+'.atom-text-editor':
   'alt-g j': 'git-diff:move-to-next-diff'
   'alt-g k': 'git-diff:move-to-previous-diff'
 
@@ -9,6 +9,6 @@
   # 'ctrl-w ctrl-l': 'vim-mode:focus-pane-view-on-right'
   '%': 'bracket-matcher:go-to-matching-bracket'
 
-'.editor:not(.mini)':
+'.atom-text-editor:not(.mini)':
   'ctrl-y ,': 'emmet:expand-abbreviation-with-tab'
   'tab': 'snippets:expand'

@@ -24,7 +24,6 @@
       "linter-rubocop"
       "jshint"
       "atom-lint"
-      "deprecation-cop"
     ]
     themes: [
       "one-light-ui"
