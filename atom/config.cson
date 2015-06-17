@@ -10,6 +10,7 @@
   editor:
     invisibles:
       space: "."
+    fontSize: 15
   core:
     disabledPackages: [
       "archive-view"
@@ -57,20 +58,16 @@
     supportLintingJsx: true
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
-  "autoclose-html":
-    {}
-  react:
-    {}
+  "autoclose-html": {}
+  react: {}
   "highlight-column":
     enableHighlight: false
-  "git-plus":
-    {}
+  "git-plus": {}
   "atom-lint":
     rubocop:
       path: "/Users/tony/.rvm/gems/ruby-2.1.3/bin/rubocop"
     jshint:
       esnext: true
-  linter:
-    {}
+  linter: {}
   "linter-rubocop":
     rubocopExecutablePath: "/Users/tony/.rvm/gems/ruby-2.1.3/bin/rubocop"
