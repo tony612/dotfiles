@@ -104,5 +104,5 @@ ulimit -n 10240
 
 alias fuck='$(thefuck $(fc -ln -1))'
 
-[[ -d $HOME/.zshrc.secret ]] && source $HOME/.zshrc.secret
+[[ -f $HOME/.zshrc.secret ]] && source $HOME/.zshrc.secret
 
