@@ -230,8 +230,8 @@
     nnoremap <SPACE> :
 
     " Wrapped lines goes down/up to next row, rather than next line in file.
-    noremap j gj
-    noremap k gk
+    " noremap j gj
+    " noremap k gk
 
     " Same for 0, home, end, etc
     noremap $ g$
