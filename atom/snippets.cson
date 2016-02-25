@@ -38,6 +38,10 @@
   'forEach':
     'prefix': 'feach'
     'body': 'forEach(function(${1:item}) {\n\t$2\n})'
+  'Redux: class skeleton':
+    # (r)e(d)ux (c)omponent
+    prefix: "rdc"
+    body: "import React, { PropTypes } from 'react'\nimport { connect } from 'react-redux'\n\nclass $1 extends React.Component {\n    render () {\n        return (\n            <div></div>\n        )\n    }\n}\n\n$1.propTypes = {\n}\n\nfunction mapStateToProps(state) {\n    return {\n    }\n}\n\nexport default connect(\n    mapStateToProps\n)($1)\n"
 
 '.source.ruby':
   'Binding.pry':
@@ -46,6 +50,9 @@
   'Bye bug':
     'prefix': 'bb'
     'body': 'byebug'
+  'RSpec focus':
+    'prefix': 'focus'
+    'body': ', focus: true'
 
 '.source.ruby.rails':
   'Concern':
@@ -56,3 +63,11 @@
   '=:=':
     'prefix': '=='
     'body': '=:= '
+
+'.source.gfm':
+  'Params Table':
+    'prefix': '----'
+    'body': 'name | type | required | description | example\n---- | ---- | -------- | ----------- | -------\n'
+  'HTTP block':
+    'prefix': 'http'
+    'body': '```http\n$1 HTTP/1.1\n```\n\n$2'

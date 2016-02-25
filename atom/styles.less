@@ -21,14 +21,6 @@
   }
 }
 
-.leading-whitespace.invisible-character {
-  visibility: hidden;
-}
-
-.atom-text-editor::shadow .invisible-character {
-  color: #525861;
-}
-
 .atom-text-editor::shadow.react .cursors.blink-off .cursor {
   visibility: hidden;
 }
@@ -42,6 +34,14 @@
   opacity: 0.8;
 }
 
-.cursor-line {
-  // background-color: black;
+.variable {
+  color: #B6D868;
+}
+
+// elixir exs file icon
+.file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path][data-path$=".exs"][data-path*="_test"]:before,
+.file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path][data-name$=".exs"][data-name*="_test"]:before,
+.icon-file-text[data-path$=".exs"][data-path*="_test"]:before,
+.icon-file-text[data-name$=".exs"][data-name*="_test"]:before {
+    color: #769E61;
 }

@@ -1,17 +1,23 @@
 "*":
-  "exception-reporting":
-    userId: "785a12dd-038b-6d03-f5f8-23d58038b90d"
-  "release-notes":
-    viewedVersion: "0.106.0"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "067dba6ea4a451705da593bab8ba135955582131"
-  editor:
-    invisibles:
-      space: "."
-    fontSize: 15
+  "api-blueprint-preview": {}
+  "atom-lint":
+    jshint:
+      esnext: true
+    rubocop:
+      path: "/Users/tony/.rvm/gems/ruby-2.1.3/bin/rubocop"
+  "atom-pair":
+    pusher_app_key: "9a5782d887a24ed00714"
+    pusher_app_secret: "64cd314ce00f95be73e5"
+    slack_url: "https://hooks.slack.com/services/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"
+  "autoclose-html": {}
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-elixir":
+    erlangHome: "/usr/local/bin"
+  "autocomplete-plus":
+    navigateCompletions: "ctrl-p,ctrl-n"
   core:
+    destroyEmptyPanes: false
     disabledPackages: [
       "archive-view"
       "autoflow"
@@ -22,52 +28,103 @@
       "jslint"
       "coffee-lint"
       "highlight-line"
-      "linter-rubocop"
-      "jshint"
       "atom-lint"
+      "activate-power-mode"
+      "pigments"
+      "go-plus"
+      "background-tips"
+      "autocomplete-elixir"
+      "swackets"
+      "jscs-fixer"
     ]
-    themes: [
-      "one-light-ui"
-      "solarized-light-syntax"
+    openEmptyEditorOnStart: false
+  editor:
+    fontSize: 15
+    invisibles: {}
+  emmet: {}
+  "exception-reporting":
+    userId: "785a12dd-038b-6d03-f5f8-23d58038b90d"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "find-and-replace": {}
+  fonts:
+    fontFamily: "Fira Mono"
+    preview: "dwddwdwdwd"
+  "git-plus": {}
+  "highlight-column": {}
+  "highlight-line":
+    enableBackgroundColor: false
+  "imdone-atom": {}
+  "jscs-fixer":
+    esprima: true
+    jscsPath: "/usr/local/bin/jscs"
+  jshint:
+    supportLintingJsx: true
+    validateOnlyOnSave: true
+  jslint:
+    hideOnNoErrors: true
+  "language-babel":
+    transpileOnSave: false
+  linter:
+    lintOnFly: false
+    showErrorPanel: false
+  "linter-elixirc": {}
+  "linter-golinter": {}
+  "linter-jscs":
+    configPath: "~/.jscsrc"
+    esnext: true
+    executablePath: "/usr/local/bin/jscs"
+    fixOnSave: true
+    harmony: true
+    preset: "<none>"
+    verbose: true
+  "linter-jshint":
+    jshintExecutablePath: "/usr/local/bin/jshint"
+  "linter-rubocop":
+    executablePath: "/Users/tony/.rbenv/versions/2.2.2/bin/rubocop"
+  "lisp-paredit": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
+  "merge-conflicts": {}
+  metrics:
+    userId: "067dba6ea4a451705da593bab8ba135955582131"
+  minimap: {}
+  "one-dark-ui": {}
+  pigments:
+    sortPaletteColors: "by name"
+  "rails-rspec":
+    specSearchPaths: [
+      "spec"
+      "fast_spec"
     ]
+  react: {}
+  "release-notes":
+    viewedVersion: "0.106.0"
   "spell-check":
     grammars: [
       "source.gfm"
       "text.git-commit"
       "text.plain"
     ]
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
+  swackets:
+    syntax: "Parentheses"
+  "todo-show": {}
   "tree-view":
     hideIgnoredNames: true
-  "highlight-line":
-    enableBackgroundColor: false
-  "markdown-preview":
-    breakOnSingleNewline: true
-  "rails-rspec":
-    specSearchPaths: [
-      "spec"
-      "fast_spec"
+  "unity-ui": {}
+  "vim-mode": {}
+  "vim-surround": {}
+  wakatime:
+    apikey: "fc3a0906-5ba5-4027-8b48-a9179cfb2ee0"
+    ignore: [
+      "^/var/"
+      "^/tmp/"
+      "^/private/"
+      "COMMIT_EDITMSG$"
+      "PULLREQ_EDITMSG$"
+      "MERGE_MSG$"
     ]
-  autocomplete:
-    includeCompletionsFromAllBuffers: true
-  jslint:
-    hideOnNoErrors: true
-  jshint:
-    validateOnlyOnSave: true
-    supportLintingJsx: true
-  "autocomplete-plus":
-    navigateCompletions: "ctrl-p,ctrl-n"
-  "autoclose-html": {}
-  react: {}
-  "highlight-column":
-    enableHighlight: false
-  "git-plus": {}
-  "atom-lint":
-    rubocop:
-      path: "/Users/tony/.rvm/gems/ruby-2.1.3/bin/rubocop"
-    jshint:
-      esnext: true
-  linter: {}
-  "linter-rubocop":
-    rubocopExecutablePath: "/Users/tony/.rvm/gems/ruby-2.1.3/bin/rubocop"
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
