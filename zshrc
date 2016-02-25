@@ -84,8 +84,9 @@ export PGHOST=localhost
 # node
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
 
-nvm use default
+# nvm use default
 
+export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:/Users/tony/repo/php/phabricator/arcanist/bin"
 
 arc alias hand -- land --hold
@@ -104,5 +105,8 @@ ulimit -n 10240
 
 alias fuck='$(thefuck $(fc -ln -1))'
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 [[ -f $HOME/.zshrc.secret ]] && source $HOME/.zshrc.secret
 
+ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" $HOME/bin/diff-highlight
