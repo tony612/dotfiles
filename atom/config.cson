@@ -39,7 +39,6 @@
     ]
     openEmptyEditorOnStart: false
   editor:
-    fontSize: 15
     invisibles: {}
   emmet: {}
   "exception-reporting":
@@ -76,15 +75,13 @@
     executablePath: "/usr/local/bin/jscs"
     fixOnSave: true
     harmony: true
-    preset: "<none>"
     verbose: true
   "linter-jshint":
     jshintExecutablePath: "/usr/local/bin/jshint"
   "linter-rubocop":
     executablePath: "/Users/tony/.rbenv/versions/2.2.2/bin/rubocop"
   "lisp-paredit": {}
-  "markdown-preview":
-    breakOnSingleNewline: true
+  "markdown-preview": {}
   "merge-conflicts": {}
   metrics:
     userId: "067dba6ea4a451705da593bab8ba135955582131"
@@ -111,8 +108,11 @@
   "todo-show": {}
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "unity-ui": {}
-  "vim-mode": {}
+  "vim-mode":
+    useClipboardAsDefaultRegister: false
+    wrapLeftRightMotion: true
   "vim-surround": {}
   wakatime:
     apikey: "fc3a0906-5ba5-4027-8b48-a9179cfb2ee0"
