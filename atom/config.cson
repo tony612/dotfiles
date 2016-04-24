@@ -81,7 +81,8 @@
   "linter-rubocop":
     executablePath: "/Users/tony/.rbenv/versions/2.2.2/bin/rubocop"
   "lisp-paredit": {}
-  "markdown-preview": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
   "merge-conflicts": {}
   metrics:
     userId: "067dba6ea4a451705da593bab8ba135955582131"
@@ -108,7 +109,6 @@
   "todo-show": {}
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   "unity-ui": {}
   "vim-mode":
     useClipboardAsDefaultRegister: false
