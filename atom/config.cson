@@ -39,6 +39,7 @@
     ]
     openEmptyEditorOnStart: false
   editor:
+    backUpBeforeSaving: true
     invisibles: {}
   emmet: {}
   "exception-reporting":

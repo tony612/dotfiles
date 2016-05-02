@@ -12,6 +12,7 @@
   excludesfile = <%= ENV['HOME'] %>/.gitignore_global
   autocrlf = input
   editor = mvim -f
+  pager = zsh -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path =
@@ -20,3 +21,18 @@
   token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
 [tag]
   sort = version:refname
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
+[alias]
+  commit = commit -v
+[color "diff-highlight"]
+  oldNormal = "red"
+  oldHighlight = "red 52"
+  newNormal = "green"
+  newHighlight = "green 22"
+[pack]
+  windowMemory = 100m
+  SizeLimit = 100m
+  threads = 1
