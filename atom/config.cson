@@ -14,9 +14,14 @@
     includeCompletionsFromAllBuffers: true
   "autocomplete-elixir":
     erlangHome: "/usr/local/bin"
+  "autocomplete-erlang": {}
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
+  "copy-as-rtf":
+    fontsize: 26
+    style: "manni"
   core:
+    closeEmptyWindows: false
     destroyEmptyPanes: false
     disabledPackages: [
       "archive-view"
@@ -30,17 +35,34 @@
       "highlight-line"
       "atom-lint"
       "activate-power-mode"
-      "pigments"
-      "go-plus"
       "background-tips"
       "autocomplete-elixir"
       "swackets"
       "jscs-fixer"
+      "linter-jscs"
+      "language-markdown"
+      "react"
+      "vim-mode"
+      "vim-surround"
+      "language-todo"
+      "linter-elixir-credo"
     ]
     openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
+    themes: [
+      "genesis-ui"
+      "behave-theme"
+    ]
+    useCustomTitleBar: true
+  docblockr:
+    auto_add_method_tag: true
   editor:
     backUpBeforeSaving: true
+    fontSize: 15
     invisibles: {}
+    preferredLineLength: 100
   emmet: {}
   "exception-reporting":
     userId: "785a12dd-038b-6d03-f5f8-23d58038b90d"
@@ -49,12 +71,27 @@
   "find-and-replace": {}
   fonts:
     fontFamily: "Fira Mono"
-    preview: "dwddwdwdwd"
-  "git-plus": {}
+  "genesis-ui":
+    distractionFree: {}
+    treeView: {}
+  "git-plus":
+    general:
+      _analyticsUserId: "44263e71-a1af-4cbb-9ee1-bdd49c4449fb"
+  "go-plus":
+    disabledBundledPackages: [
+      "go-debug"
+    ]
+    panelDisplayMode: "closed"
+    test:
+      focusPanelIfTestsFail: false
+  gofmt:
+    formatOnSave: false
+    formatTool: "goreturns"
   "highlight-column": {}
   "highlight-line":
     enableBackgroundColor: false
   "imdone-atom": {}
+  "info-comment": {}
   "jscs-fixer":
     esprima: true
     jscsPath: "/usr/local/bin/jscs"
@@ -65,6 +102,7 @@
     hideOnNoErrors: true
   "language-babel":
     transpileOnSave: false
+  "language-markdown": {}
   linter:
     lintOnFly: false
     showErrorPanel: false
@@ -72,16 +110,16 @@
   "linter-golinter": {}
   "linter-jscs":
     configPath: "~/.jscsrc"
-    esnext: true
     executablePath: "/usr/local/bin/jscs"
-    fixOnSave: true
     harmony: true
-    verbose: true
+    preset: "google"
+    verbose: false
   "linter-jshint":
     jshintExecutablePath: "/usr/local/bin/jshint"
   "linter-rubocop":
-    executablePath: "/Users/tony/.rbenv/versions/2.2.2/bin/rubocop"
-  "lisp-paredit": {}
+    command: "/Users/tony/.rbenv/versions/2.2.5/bin/rubocop"
+  "lisp-paredit":
+    strict: false
   "markdown-preview":
     breakOnSingleNewline: true
   "merge-conflicts": {}
@@ -99,6 +137,8 @@
   react: {}
   "release-notes":
     viewedVersion: "0.106.0"
+  "rubocop-auto-correct":
+    notification: false
   "spell-check":
     grammars: [
       "source.gfm"
@@ -110,6 +150,7 @@
   "todo-show": {}
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "unity-ui": {}
   "vim-mode":
     useClipboardAsDefaultRegister: false
@@ -129,3 +170,7 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".makefile.source":
+  editor:
+    showInvisibles: true
+    softWrap: true

@@ -65,6 +65,12 @@
   'RSpec focus':
     'prefix': 'focus'
     'body': ', focus: true'
+  'RSpec focus':
+    'prefix': 'focus'
+    'body': ', focus: true'
+  'RSpec model':
+    'prefix': 'rsmodel'
+    'body': "require 'rails_helper'\n\nRSpec.describe ${1:ModuleName}, type: :model do\n  it '$2' do\n\n  end\nend\n"
 
 '.source.ruby.rails':
   'Concern':

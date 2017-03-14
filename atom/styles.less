@@ -12,13 +12,60 @@
 
 @syntax-background-color: #252c31;
 
-.tree-view {
+.status-ignored, .status-ignored > * {
+  color: #7f889b !important;
+}
+
+.status-ignored.selected, .status-ignored.selected > * {
+  color: #dadee5 !important;
+}
+
+.status-ignored:hover, .status-ignored > *:hover {
+  color: #dadee5 !important;
+}
+
+.list-tree li.list-nested-item:hover > .list-item {
+  color: #adb6c5;
+}
+.list-tree li.list-nested-item.selected > .list-item {
+  color: #dadee5;
+}
+
+.tree-view{
+  li{
+    &,> span{
+      transition: all 0.07s ease-in-out;
+    }
+
+    &:hover{
+      &:not(.selected){
+        > span{
+          // color:#dadee5;
+        }
+      }
+    }
+  }
+}
+.hide-tree-items{
+  .tree-view{
+    &:not(:hover){
+      li{
+        &.collapsed, &.project-root > ol > .file > span{
+          opacity:1;
+        }
+      }
+    }
+  }
 }
 
 .scroll-view {
   &, & .lines {
     // background-color: @syntax-background-color;
   }
+}
+
+.line.cursor-line {
+  background-color: transparent !important;
 }
 
 .atom-text-editor::shadow.react .cursors.blink-off .cursor {
@@ -39,9 +86,25 @@
 }
 
 // elixir exs file icon
-.file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path][data-path$=".exs"][data-path*="_test"]:before,
-.file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path][data-name$=".exs"][data-name*="_test"]:before,
-.icon-file-text[data-path$=".exs"][data-path*="_test"]:before,
-.icon-file-text[data-name$=".exs"][data-name*="_test"]:before {
-    color: #769E61;
+atom-pane .title[data-path][data-path$=".exs"][data-path*="_test"]:before,
+atom-pane .title[data-path][data-name$=".exs"][data-name*="_test"]:before,
+.elixir-icon[data-path$=".exs"][data-path*="_test"]:before,
+.elixir-icon[data-name$=".exs"][data-name*="_test"]:before {
+  color: #769E61;
+}
+
+// ruby unit test file icon
+atom-pane .title[data-path][data-path$=".rb"][data-path*="_test"]:before,
+atom-pane .title[data-path][data-name$=".rb"][data-name*="_test"]:before,
+.ruby-icon[data-path$=".rb"][data-path*="_test"]:before,
+.ruby-icon[data-name$=".rb"][data-name*="_test"]:before {
+  color: #769E61;
+}
+
+// go test file icon
+atom-pane .title[data-path][data-path$=".go"][data-path*="_test"]:before,
+atom-pane .title[data-path][data-name$=".go"][data-name*="_test"]:before,
+.go-icon[data-path$=".go"][data-path*="_test"]:before,
+.go-icon[data-name$=".go"][data-name*="_test"]:before {
+  color: #769E61;
 }

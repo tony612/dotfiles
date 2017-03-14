@@ -12,3 +12,12 @@
 '.atom-text-editor:not(.mini)':
   'ctrl-y ,': 'emmet:expand-abbreviation-with-tab'
   'tab': 'snippets:expand'
+
+'atom-text-editor':
+  'alt-k': 'atom-elixir:return-from-definition'
+'.platform-darwin atom-text-editor:not(mini)':
+  'alt-k': 'atom-elixir:return-from-definition'
+'atom-text-editor:not(mini)[data-grammar^="source elixir"]':
+  'alt-j': 'atom-elixir:goto-definition'
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'g s': 'vim-mode-plus:snake-case'

@@ -188,7 +188,7 @@
     " .vimrc.before.local file:
     "   let g:spf13_keep_trailing_whitespace = 1
     autocmd FileType c,cpp,java,go,php,javascript,ruby,python,twig,xml,yml autocmd BufWritePre <buffer> if !exists('g:spf13_keep_trailing_whitespace') | call StripTrailingWhitespace() | endif
-    autocmd FileType go autocmd BufWritePre <buffer> Fmt
+    " autocmd FileType go autocmd BufWritePre <buffer> Fmt
     autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
     " autocmd FileType haskell setlocal expandtab shiftwidth=2 softtabstop=2
     " preceding line best in a plugin but here for now.
@@ -230,8 +230,8 @@
     nnoremap <SPACE> :
 
     " Wrapped lines goes down/up to next row, rather than next line in file.
-    " noremap j gj
-    " noremap k gk
+    noremap j gj
+    noremap k gk
 
     " Same for 0, home, end, etc
     noremap $ g$
@@ -483,17 +483,17 @@
         " If using go please install the gotags program using the following
         " go install github.com/jstemmer/gotags
         " And make sure gotags is in your path
-        let g:tagbar_type_go = {
-            \ 'ctagstype' : 'go',
-            \ 'kinds'     : [  'p:package', 'i:imports:1', 'c:constants', 'v:variables',
-                \ 't:types',  'n:interfaces', 'w:fields', 'e:embedded', 'm:methods',
-                \ 'r:constructor', 'f:functions' ],
-            \ 'sro' : '.',
-            \ 'kind2scope' : { 't' : 'ctype', 'n' : 'ntype' },
-            \ 'scope2kind' : { 'ctype' : 't', 'ntype' : 'n' },
-            \ 'ctagsbin'  : 'gotags',
-            \ 'ctagsargs' : '-sort -silent'
-            \ }
+        " let g:tagbar_type_go = {
+        "     \ 'ctagstype' : 'go',
+        "     \ 'kinds'     : [  'p:package', 'i:imports:1', 'c:constants', 'v:variables',
+        "         \ 't:types',  'n:interfaces', 'w:fields', 'e:embedded', 'm:methods',
+        "         \ 'r:constructor', 'f:functions' ],
+        "     \ 'sro' : '.',
+        "     \ 'kind2scope' : { 't' : 'ctype', 'n' : 'ntype' },
+        "     \ 'scope2kind' : { 'ctype' : 't', 'ntype' : 'n' },
+        "     \ 'ctagsbin'  : 'gotags',
+        "     \ 'ctagsargs' : '-sort -silent'
+        "     \ }
     "}
 
     " PythonMode {

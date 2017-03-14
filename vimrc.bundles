@@ -174,7 +174,7 @@
 
     " HTML {
         if count(g:spf13_bundle_groups, 'html')
-            Plugin 'amirh/HTML-AutoCloseTag'
+            " Plugin 'amirh/HTML-AutoCloseTag'
             Plugin 'hail2u/vim-css3-syntax'
             Plugin 'tpope/vim-haml'
             Plugin 'slim-template/vim-slim'
@@ -217,10 +217,10 @@
             Plugin 'briancollins/vim-jst'
             Plugin 'kchmck/vim-coffee-script'
 
-            Plugin 'Shutnik/jshint2.vim'
-            let jshint2_read = 1
-            let jshint2_save = 1
-            let jshint2_confirm = 0
+            " Plugin 'Shutnik/jshint2.vim'
+            " let jshint2_read = 1
+            " let jshint2_save = 1
+            " let jshint2_confirm = 0
             " Plugin 'hallettj/jslint.vim'
 
             Plugin 'elzr/vim-json'
@@ -233,8 +233,8 @@
 
     " Go Lang {
         if count(g:spf13_bundle_groups, 'go')
-            Plugin 'jnwhiteh/vim-golang'
-            Plugin 'spf13/vim-gocode'
+            Plugin 'fatih/vim-go'
+            " Plugin 'spf13/vim-gocode'
         endif
     " }
     
