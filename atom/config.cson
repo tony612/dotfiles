@@ -200,6 +200,8 @@
   "vim-mode":
     useClipboardAsDefaultRegister: false
     wrapLeftRightMotion: true
+  "vim-mode-plus":
+    useClipboardAsDefaultRegister: false
   "vim-surround": {}
   wakatime:
     apikey: "fc3a0906-5ba5-4027-8b48-a9179cfb2ee0"
