@@ -42,7 +42,6 @@
       "linter-jscs"
       "language-markdown"
       "react"
-      "vim-mode"
       "vim-surround"
       "language-todo"
       "linter-elixir-credo"
@@ -80,10 +79,8 @@
       "ruby-syntax-replacer"
       "script"
       "language-clojure"
-      "language-coffee-script"
       "language-csharp"
       "language-java"
-      "language-less"
       "language-mustache"
       "language-objective-c"
       "language-perl"
@@ -91,6 +88,8 @@
       "language-sass"
       "language-toml"
       "language-xml"
+      "hyperclick"
+      "vim-mode"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -125,6 +124,8 @@
   "go-plus":
     disabledBundledPackages: [
       "go-debug"
+      "go-signature-statusbar"
+      "hyperclick"
     ]
     panelDisplayMode: "closed"
     test:
@@ -148,9 +149,7 @@
   "language-babel":
     transpileOnSave: false
   "language-markdown": {}
-  linter:
-    lintOnFly: false
-    showErrorPanel: false
+  linter: {}
   "linter-elixirc": {}
   "linter-golinter": {}
   "linter-jscs":
@@ -163,6 +162,7 @@
     jshintExecutablePath: "/usr/local/bin/jshint"
   "linter-rubocop":
     command: "/Users/tony/.rbenv/versions/2.2.5/bin/rubocop"
+  "linter-ui-default": {}
   "lisp-paredit":
     strict: false
   "markdown-preview":
