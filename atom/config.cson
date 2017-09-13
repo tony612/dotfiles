@@ -96,7 +96,7 @@
       "emmet"
     ]
     themes: [
-      "genesis-ui"
+      "one-dark-ui"
       "behave-theme"
     ]
     titleBar: "custom"
@@ -104,7 +104,7 @@
     auto_add_method_tag: true
   editor:
     backUpBeforeSaving: true
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 100
   emmet: {}
@@ -162,7 +162,8 @@
     jshintExecutablePath: "/usr/local/bin/jshint"
   "linter-rubocop":
     command: "/Users/tony/.rbenv/versions/2.2.5/bin/rubocop"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 81
   "lisp-paredit":
     strict: false
   "markdown-preview":
