@@ -164,6 +164,7 @@
     command: "/Users/tony/.rbenv/versions/2.2.5/bin/rubocop"
   "linter-ui-default":
     panelHeight: 81
+    tooltipFollows: "Mouse"
   "lisp-paredit":
     strict: false
   "markdown-preview":
