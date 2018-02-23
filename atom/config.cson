@@ -137,6 +137,7 @@
     ]
     panelDisplayMode: "closed"
     test:
+      coverageHighlightMode: "disabled"
       focusPanelIfTestsFail: false
   gofmt:
     formatOnSave: false
