@@ -740,7 +740,7 @@
     " vim-gitgutter {
         " https://github.com/airblade/vim-gitgutter/issues/106
         " let g:gitgutter_realtime = 0
-        let g:gitgutter_sign_column_always = 1
+        set signcolumn=yes
     " }
 
 " }

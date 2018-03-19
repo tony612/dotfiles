@@ -58,7 +58,7 @@
     " In your .vimrc.bundles.local file
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
-        let g:spf13_bundle_groups=['general', 'snipmate', 'programming', 'ruby', 'go', 'javascript', 'html', 'misc', 'scala', 'clojure', 'php', 'elixir']
+        let g:spf13_bundle_groups=['general', 'snipmate', 'programming', 'ruby', 'go', 'javascript', 'html', 'misc', 'scala', 'clojure', 'php', 'elixir', 'terraform']
     endif
 
     " To override all the included bundles, add the following to your
@@ -203,7 +203,7 @@
 
     " Elixir {
         if count(g:spf13_bundle_groups, 'elixir')
-          Plugin 'elixir-lang/vim-elixir'
+          Plugin 'elixir-editors/vim-elixir'
         endif
     " }
 
@@ -241,6 +241,12 @@
     " PHP {
         if count(g:spf13_bundle_groups, 'php')
             Plugin 'StanAngeloff/php.vim'
+        endif
+    " }
+
+    " Terraform {
+        if count(g:spf13_bundle_groups, 'terraform')
+            Plugin 'hashivim/vim-terraform'
         endif
     " }
 
