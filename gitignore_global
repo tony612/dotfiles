@@ -3,3 +3,4 @@
 .agignore
 .rake_tasks
 .mix_tasks
+.vscode

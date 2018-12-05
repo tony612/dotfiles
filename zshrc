@@ -109,4 +109,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 [[ -f $HOME/.zshrc.secret ]] && source $HOME/.zshrc.secret
 
-ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" $HOME/bin/diff-highlight
+# ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" $HOME/bin/diff-highlight
+
+export ERL_AFLAGS="-kernel shell_history enabled"

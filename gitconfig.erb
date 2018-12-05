@@ -12,7 +12,7 @@
   excludesfile = <%= ENV['HOME'] %>/.gitignore_global
   autocrlf = input
   editor = mvim -f
-  pager = zsh -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
+  pager = zsh -lc '/usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -r' -
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path =
@@ -38,3 +38,9 @@
   threads = 1
 [diff]
   compactionHeuristic = true
+[tig "bind"]
+  generic = <C-F> move-half-page-down
+  generic = <C-B> move-half-page-up
+[tig]
+  main-view = line-number:no,interval=5 id:yes date:default author:full commit-title:yes,graph,refs,overflow=no
+
